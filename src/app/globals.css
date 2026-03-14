@@ -1,26 +1,115 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Fontes */
+  --font-primary: "JetBrains Mono";
+  --font-secondary: "IBM Plex Mono";
+
+  /* Cores Base - Light Mode */
+  --color-background: #f2f3f0;
+  --color-foreground: #111111;
+  --color-card: #ffffff;
+  --color-card-foreground: #111111;
+  --color-popover: #ffffff;
+  --color-popover-foreground: #111111;
+  --color-primary: #ff8400;
+  --color-primary-foreground: #111111;
+  --color-secondary: #e7e8e5;
+  --color-secondary-foreground: #111111;
+  --color-muted: #f2f3f0;
+  --color-muted-foreground: #666666;
+  --color-accent: #f2f3f0;
+  --color-accent-foreground: #111111;
+  --color-destructive: #d93c15;
+  --color-destructive-foreground: #ffffff;
+  --color-border: #cbccc9;
+  --color-input: #cbccc9;
+  --color-ring: #666666;
+  --color-text-primary: #e5e5e5;
+  --color-text-secondary: #a3a3a3;
+  --color-text-tertiary: #737373;
+
+  /* Cores Específicas - Light Mode */
+  --color-accent-green: #10b981;
+  --color-accent-green-hover: #0f9d75;
+  --color-accent-amber: #f59e0b;
+  --color-accent-blue: #3b82f6;
+  --color-accent-orange: #f97316;
+  --color-accent-red: #ef4444;
+  --color-accent-cyan: #06b6d4;
+  --color-green-primary: #22c55e;
+
+  /* Syntax Highlighting Colors */
+  --color-syn-keyword: #c678dd;
+  --color-syn-function: #61afef;
+  --color-syn-variable: #e06c75;
+  --color-syn-number: #d19a66;
+  --color-syn-operator: #abb2bf;
+  --color-syn-property: #98c379;
+  --color-syn-string: #e5c07b;
+  --color-syn-type: #e5c07b;
+
+  /* Cores de Estado */
+  --color-error: #e5dcda;
+  --color-error-foreground: #8c1c00;
+  --color-success: #dfe6e1;
+  --color-success-foreground: #004d1a;
+  --color-warning: #e9e3d8;
+  --color-warning-foreground: #804200;
+  --color-info: #dfdfe6;
+  --color-info-foreground: #000066;
+
+  /* Sidebar Colors */
+  --color-sidebar: #e7e8e5;
+  --color-sidebar-foreground: #666666;
+  --color-sidebar-accent: #cbccc9;
+  --color-sidebar-accent-foreground: #18181b;
+  --color-sidebar-border: #cbccc9;
+  --color-sidebar-primary: #18181b;
+  --color-sidebar-primary-foreground: #fafafa;
+  --color-sidebar-ring: #71717a;
+
+  /* Dark Mode Colors */
+  --color-bg-page: #0a0a0a;
+  --color-bg-surface: #0f0f0f;
+  --color-bg-elevated: #1a1a1a;
+  --color-bg-input: #111111;
+  --color-border-primary: #2a2a2a;
+  --color-border-focus: #10b981;
+
+  /* Espaçamento */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 40px;
+
+  /* Border Radius */
+  --radius-none: 0px;
+  --radius-m: 16px;
+  --radius-pill: 999px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Aplicar fonte primária ao documento */
+html,
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-primary);
+}
+
+/* Aplicar fonte primária ao documento */
+html,
+body {
+  font-family: var(--font-primary);
+}
+
+/* Aplicar fonte primária ao documento */
+html,
+body {
+  font-family: var(--font-primary);
+}
+
+/* Aplicar fonte primária ao documento */
+html,
+body {
+  font-family: var(--font-primary);
 }
